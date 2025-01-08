@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.my-hover-sidebar {
+  @apply hover:bg-white/50 hover:backdrop-blur-lg hover:rounded-lg ps-3;
+}
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -18,4 +21,24 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  color: black;
+}
+
+body.dark {
+  background-color: black;
+  color: white;
+}
+
+
+@font-face {
+  font-family: 'Vazir';
+  src: url('/fonts/vazir/vazir.woff2') format('woff2'),
+       url('/fonts/vazir/vazir.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Vazir', sans-serif;
 }
